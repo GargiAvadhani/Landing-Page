@@ -1,0 +1,75 @@
+/* src/components/Info.css */
+
+.info-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+  opacity: 0;
+  /* Initially hide the content */
+  animation: fadeIn 1.0s ease forwards, scaleIn 0.8s ease forwards, rotateIn 0.9s ease forwards;
+  /* Apply multiple animations */
+  animation-delay: 1.7s;
+  /* Delay the animation */
+  /* background-color: #B9D9EB; Add background color */
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(9, 3, 122) 0%,   rgba(0, 212, 255, 1) 100%);
+  border-radius: 10px;
+  /* Add some border radius for rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Add a box shadow for depth */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+    /* Move up slightly */
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    /* Move back to original position */
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    /* Scale down slightly */
+  }
+
+  to {
+    transform: scale(1);
+    /* Scale to normal size */
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    transform: rotate(-10deg);
+    /* Rotate slightly clockwise */
+  }
+
+  to {
+    transform: rotate(0);
+    /* Rotate to normal position */
+  }
+}
+
+.info-heading {
+  font-size: 33px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: whitesmoke;
+  /* Change text color */
+}
+
+.info-text {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: justify;
+  color: whitesmoke;
+  /* Change text color */
+}

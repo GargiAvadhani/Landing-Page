@@ -1,0 +1,60 @@
+.features {
+  display: flex;
+  flex-wrap: nowrap;
+  /* //flex-wrap: wrap; */
+  justify-content: center;
+  flex-direction: column;
+  /* Display children elements vertically */
+  align-items: center;
+  /* Center align children horizontally */
+}
+
+.title {
+  text-align: center;
+  margin: 20px;
+  font-size: 40px;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  /* Adjust the width as needed */
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  /* Move the card slightly up */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Add a shadow effect */
+  background-color: #b0c4de;
+  /* Change the background color */
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 14px;
+  color: #555555;
+}
